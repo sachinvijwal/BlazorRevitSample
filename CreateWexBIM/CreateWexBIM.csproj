@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net47</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="SampleHouse.ifc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.2" />
+    <PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
+    <PackageReference Include="Xbim.COBieLite" Version="5.1.179" />
+    <PackageReference Include="Xbim.Essentials" Version="5.1.297" />
+    <PackageReference Include="Xbim.Exchange" Version="5.1.179" />
+    <PackageReference Include="Xbim.Geometry" Version="5.1.328" />
+  </ItemGroup>
+</Project>
